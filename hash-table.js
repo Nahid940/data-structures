@@ -5,6 +5,7 @@ class HashTable{
     this.data=new Array(size)
   }
 
+  //Generate a has value 
   _hash(key)
   {
     let hash=0;
@@ -16,6 +17,7 @@ class HashTable{
     return hash
   }
 
+  //store key and value in the array
   set(key,value)
   {
     const address=this._hash(key)
@@ -28,6 +30,7 @@ class HashTable{
     return this.data
   }
 
+  //Retrieve the value according to the key
   get(key)
   {
     const address=this._hash(key)
